@@ -1,5 +1,6 @@
 Django==2.0.5
 django-mysql-pymysql==0.1
+django-rest-auth==0.9.5
 django-taggit==0.22.2
 djangorestframework==3.10.2
 mysql-connector==2.2.9
