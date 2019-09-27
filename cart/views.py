@@ -3,12 +3,12 @@ from django.views.decorators.http import require_POST
 from shop.models import Product
 from .cart import Cart
 from cart.forms import CartAddProductForm
-
-
+from django.contrib.sessions.models import Session
 @require_POST
 def cart_add(request, product_id):
     cart = Cart(request)
-    print ("Tunde session key ---- ",request.session.keys())
+    print ("Tunde session key ---- ",Session.objects.all())
+    print ("Tunde session key-------------------------------------- ",request.session.session_key)
     product = get_object_or_404(Product, id=product_id)
     form = CartAddProductForm(request.POST)
     if form.is_valid():
