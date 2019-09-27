@@ -19,6 +19,7 @@ from rest_framework.status import (
 
 # Create your views here.
 def product_list(request,category_slug=None):
+
     category = None
     categories = Category.objects.all()
     products = Product.objects.filter(available=True)
@@ -26,9 +27,14 @@ def product_list(request,category_slug=None):
         category = get_object_or_404(Category,slug=category_slug)
         products = products.filter(category=category)
     args = {'category':category, 'categories':categories, 'products':products}
+    request.session['TUNDE'] = "WATCHING YOU"
+    request.session.set_test_cookie()
     return render(request,'shop/product/list.html',args)
 
 def product_detail(request, id, slug):
+    cookie_status = request.session.test_cookie_worked()
+
+    print ("Tunde ---cookie-----",cookie_status,request.session['TUNDE'])
     product = get_object_or_404(Product, id=id, slug=slug, available=True)
     cart_product_form = CartAddProductForm()
     args = {'product': product, 'cart_product_form': CartAddProductForm()

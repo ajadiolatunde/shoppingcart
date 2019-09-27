@@ -8,6 +8,7 @@ from django.contrib.sessions.models import Session
 def cart_add(request, product_id):
     cart = Cart(request)
     print ("Tunde session key ---- ",Session.objects.all())
+    print ("Tunde cookie------",request.COOKIES )
     print ("Tunde session key-------------------------------------- ",request.session.session_key)
     product = get_object_or_404(Product, id=product_id)
     form = CartAddProductForm(request.POST)
