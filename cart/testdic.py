@@ -33,3 +33,17 @@ C.dangerous = 3
 print (c2.dangerous)
 print (C.__dict__)
 print (dir(C))
+def lent(el):
+    return len(el)
+mylist = ["a3", "bgff", "affdf", "cfggg", "c"]
+mylis = list(dict.fromkeys(mylist))
+mylis.sort(key=len)
+print(mylis)
+# lambda, unittest
+p ={"apple", "banana", "cherry"}
+print (''.join(p))
+d = "ola"
+x =""
+for i in range(len(d)):
+    x += d[len(d)-(i+1)]
+print(x)

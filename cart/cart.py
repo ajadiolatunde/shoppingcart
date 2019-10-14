@@ -38,6 +38,7 @@ class Cart(object):
 
     def __iter__(self):
         """Iterate over items in the cart and get products from database  """
+        print ("cart----",self.cart)
         product_ids = self.cart.keys()
         products = Product.objects.filter(id__in = product_ids)
 
