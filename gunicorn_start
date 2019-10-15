@@ -1,0 +1,27 @@
+#!/bin/bash
+
+NAME="myshop"
+APP_DIR=/home/olatunde/Pycharmproject/myshop
+DIR=/root/PycharmProjects/learforandela
+USER=olatunde
+GROUP=olatunde
+WORKERS=3
+BIND=unix:/home/olatunde/myshop/run/gunicorn.sock
+DJANGO_SETTINGS_MODULE=myshop.settings
+DJANGO_WSGI_MODULE=myshop.wsgi
+LOG_LEVEL=error
+
+cd $DIR
+source bin/activate
+cd $APP_DIR
+export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
+
+export PYTHONPATH=$DIR:$PYTHONPATH
+echo $PYTHONPATH
+echo $PYTHONPATH
+exec gunicorn ${DJANGO_WSGI_MODULE}:application \
+  --name $NAME \
+  --workers $WORKERS \
+  --bind=$BIND \
+  --log-level=$LOG_LEVEL \
+  --log-file=-
