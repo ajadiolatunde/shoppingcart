@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="384c7d1b-5dd8-49fa-908f-3ef9a4256c4b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/myshop/wsgi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +18,8 @@
           <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/myshop/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1480">
-                  <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+                <state relative-caret-position="87">
+                  <caret line="139" column="51" selection-start-line="139" selection-start-column="51" selection-end-line="139" selection-end-column="51" />
                 </state>
               </provider>
             </entry>
@@ -440,7 +438,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1993" y="24" width="1815" height="1022" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13203342" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -855,8 +852,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myshop/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1480">
-          <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+        <state relative-caret-position="87">
+          <caret line="139" column="51" selection-start-line="139" selection-start-column="51" selection-end-line="139" selection-end-column="51" />
         </state>
       </provider>
     </entry>
